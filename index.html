@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>cruds</h1>
+    <p>create read update delete search </p>
+    <div class="container">
+        <input type="text" placeholder="title" class="title">
+        <div>
+            <input type="text" placeholder="price" class="price" onkeyup="calctotal()">
+            <input type="text" placeholder="taxes" class="taxes" onkeyup="calctotal()">
+            <input type="text" placeholder="ads" class="ads" onkeyup="calctotal()">
+            <input type="number" class="discount" placeholder="discount" onkeyup=" calctotal()">
+
+
+            <small type="text" class="total"></small>
+        </div>
+        <input type="text" placeholder="country" class="country">
+        <input type="text" placeholder="category" class="category">
+        <input type="number" class="count" placeholder="count">
+        <input type="button" value="create" class="create" onclick="create()">
+        <input type="text" class="search" onkeyup="getsearchitem(value)">
+        <div>
+            <input type="button" value="search by title" id="searchtitle" onclick="search(id)">
+            <input type="button" value="search by cateogry" id="searchcateogry" onclick="search(id)">
+        </div>
+        <input type="button" value="Delete all" class="deleteall" onclick="deleteall()">
+    </div>
+
+    <table id="device">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>country</th>
+                <th>cateogry
+                </th>
+                <th>update</th>
+                <th>delete</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
